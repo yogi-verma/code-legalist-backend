@@ -6,6 +6,7 @@ const postsRouter = require("./routes/posts");
 
 
 
+
 dotenv.config();
 
 const app = express();
@@ -21,7 +22,7 @@ connectDB();
 app.use("/api/auth", require("./routes/authRoute"));
 app.use('/api/posts', postsRouter);
 
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
     res.send("API is running...");
   });
 
