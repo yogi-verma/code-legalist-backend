@@ -6,7 +6,7 @@ const postsRouter = require("./routes/posts");
 
 
 const corsOptions = {
-  origin: "https://code-legalist-frontend.vercel.app",
+  origin: "https://code-legalist-frontend-3hef.vercel.app",
   methods: ["GET,HEAD,PUT,PATCH,POST,DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 }
