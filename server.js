@@ -5,18 +5,18 @@ const connectDB = require("./config/db");
 const postsRouter = require("./routes/posts");
 
 
-// const corsOptions = {
-//   origin: "https://code-legalist-frontend.vercel.app",
-//   methods: ["GET,HEAD,PUT,PATCH,POST,DELETE"],
-//   allowedHeaders: ["Content-Type", "Authorization"],
-// }
+const corsOptions = {
+  origin: "https://code-legalist-frontend.vercel.app",
+  methods: ["GET,HEAD,PUT,PATCH,POST,DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+}
 
 dotenv.config();
 
 const app = express();
 // Middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 
 
